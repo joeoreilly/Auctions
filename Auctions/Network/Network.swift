@@ -8,15 +8,6 @@
 
 import Foundation
 
-enum Result<T> {
-    case success(T)
-    case failure(Error)
-}
-
-protocol Networking {
-    func data(from url: URL, completion: @escaping (Result<Data>) -> ())
-}
-
 class Network: Networking {
 
     enum NetworkError: Error {

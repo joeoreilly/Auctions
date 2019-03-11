@@ -1,5 +1,5 @@
 //
-//  Dependancies.swift
+//  Dependencies.swift
 //  Auctions
 //
 //  Created by Joe O'Reilly on 10/03/2019.
@@ -8,13 +8,12 @@
 
 import Foundation
 
-struct Dependancies {
+struct Dependencies {
 
     var app = AppCoordinator()
     var auctions = AuctionsCoordinator()
 
-    var network = Network()
-
+    var network: Networking = Network()
 }
 
-let Current = Dependancies()
+let Current = Dependencies()

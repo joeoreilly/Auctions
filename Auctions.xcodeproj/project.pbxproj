@@ -8,18 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		D84789CF22354CF0007C7C7F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84789CE22354CF0007C7C7F /* AppDelegate.swift */; };
-		D84789D122354CF0007C7C7F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84789D022354CF0007C7C7F /* ViewController.swift */; };
 		D84789D622354CF2007C7C7F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D84789D522354CF2007C7C7F /* Assets.xcassets */; };
 		D84789D922354CF2007C7C7F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D84789D722354CF2007C7C7F /* LaunchScreen.storyboard */; };
 		D84789E422354CF2007C7C7F /* AuctionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84789E322354CF2007C7C7F /* AuctionsTests.swift */; };
 		D84789EF22354D0D007C7C7F /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84789EE22354D0D007C7C7F /* AppCoordinator.swift */; };
-		D84789F222354D89007C7C7F /* Dependancies.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84789F122354D89007C7C7F /* Dependancies.swift */; };
+		D84789F222354D89007C7C7F /* Dependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84789F122354D89007C7C7F /* Dependencies.swift */; };
 		D84789F522354E56007C7C7F /* Auction.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84789F422354E56007C7C7F /* Auction.swift */; };
 		D84789F722354F0F007C7C7F /* AuctionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84789F622354F0F007C7C7F /* AuctionsViewController.swift */; };
-		D84789F9223555BF007C7C7F /* AuctionDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84789F8223555BF007C7C7F /* AuctionDataSource.swift */; };
 		D84789FF223555F7007C7C7F /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84789FE223555F7007C7C7F /* Network.swift */; };
 		D8478A0122355666007C7C7F /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8478A0022355666007C7C7F /* LoadingViewController.swift */; };
 		D860C85322359A1000A724C9 /* AuctionDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D860C85222359A1000A724C9 /* AuctionDetailViewController.swift */; };
+		D860C8552236688900A724C9 /* PlaceholderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D860C8542236688900A724C9 /* PlaceholderViewController.swift */; };
+		D860C85822366ED600A724C9 /* AuctionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D860C85722366ED600A724C9 /* AuctionTableViewCell.swift */; };
+		D860C85A22367E9A00A724C9 /* ErrorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D860C85922367E9900A724C9 /* ErrorViewController.swift */; };
+		D860C85C2236850400A724C9 /* AuctionsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D860C85B2236850400A724C9 /* AuctionsCoordinator.swift */; };
+		D860C85E2236869400A724C9 /* SplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D860C85D2236869400A724C9 /* SplitViewController.swift */; };
+		D860C86122368E2400A724C9 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = D860C86022368E2400A724C9 /* Networking.swift */; };
+		D860C86322368E3800A724C9 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = D860C86222368E3800A724C9 /* Result.swift */; };
+		D860C86622368E6300A724C9 /* AuctionResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D860C86522368E6300A724C9 /* AuctionResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +41,6 @@
 /* Begin PBXFileReference section */
 		D84789CB22354CF0007C7C7F /* Auctions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Auctions.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D84789CE22354CF0007C7C7F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D84789D022354CF0007C7C7F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D84789D522354CF2007C7C7F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D84789D822354CF2007C7C7F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D84789DA22354CF2007C7C7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -43,13 +48,21 @@
 		D84789E322354CF2007C7C7F /* AuctionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuctionsTests.swift; sourceTree = "<group>"; };
 		D84789E522354CF2007C7C7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D84789EE22354D0D007C7C7F /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
-		D84789F122354D89007C7C7F /* Dependancies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dependancies.swift; sourceTree = "<group>"; };
+		D84789F122354D89007C7C7F /* Dependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dependencies.swift; sourceTree = "<group>"; };
 		D84789F422354E56007C7C7F /* Auction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Auction.swift; sourceTree = "<group>"; };
 		D84789F622354F0F007C7C7F /* AuctionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuctionsViewController.swift; sourceTree = "<group>"; };
-		D84789F8223555BF007C7C7F /* AuctionDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuctionDataSource.swift; sourceTree = "<group>"; };
 		D84789FE223555F7007C7C7F /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		D8478A0022355666007C7C7F /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
 		D860C85222359A1000A724C9 /* AuctionDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuctionDetailViewController.swift; sourceTree = "<group>"; };
+		D860C8542236688900A724C9 /* PlaceholderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceholderViewController.swift; sourceTree = "<group>"; };
+		D860C85722366ED600A724C9 /* AuctionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuctionTableViewCell.swift; sourceTree = "<group>"; };
+		D860C85922367E9900A724C9 /* ErrorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorViewController.swift; sourceTree = "<group>"; };
+		D860C85B2236850400A724C9 /* AuctionsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuctionsCoordinator.swift; sourceTree = "<group>"; };
+		D860C85D2236869400A724C9 /* SplitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitViewController.swift; sourceTree = "<group>"; };
+		D860C86022368E2400A724C9 /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
+		D860C86222368E3800A724C9 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		D860C86522368E6300A724C9 /* AuctionResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuctionResponse.swift; sourceTree = "<group>"; };
+		D860C86822368FA900A724C9 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +86,7 @@
 		D84789C222354CF0007C7C7F = {
 			isa = PBXGroup;
 			children = (
+				D860C86822368FA900A724C9 /* README.md */,
 				D84789CD22354CF0007C7C7F /* Auctions */,
 				D84789E222354CF2007C7C7F /* AuctionsTests */,
 				D84789CC22354CF0007C7C7F /* Products */,
@@ -92,15 +106,12 @@
 			isa = PBXGroup;
 			children = (
 				D84789CE22354CF0007C7C7F /* AppDelegate.swift */,
+				D84789F122354D89007C7C7F /* Dependencies.swift */,
 				D84789EE22354D0D007C7C7F /* AppCoordinator.swift */,
-				D860C85222359A1000A724C9 /* AuctionDetailViewController.swift */,
-				D8478A0022355666007C7C7F /* LoadingViewController.swift */,
-				D84789F422354E56007C7C7F /* Auction.swift */,
-				D84789F622354F0F007C7C7F /* AuctionsViewController.swift */,
-				D84789F8223555BF007C7C7F /* AuctionDataSource.swift */,
-				D84789F122354D89007C7C7F /* Dependancies.swift */,
-				D84789D022354CF0007C7C7F /* ViewController.swift */,
-				D84789FE223555F7007C7C7F /* Network.swift */,
+				D860C85B2236850400A724C9 /* AuctionsCoordinator.swift */,
+				D860C86422368E5000A724C9 /* Models */,
+				D860C85622366E9A00A724C9 /* UI */,
+				D860C85F22368E1900A724C9 /* Network */,
 				D84789D522354CF2007C7C7F /* Assets.xcassets */,
 				D84789D722354CF2007C7C7F /* LaunchScreen.storyboard */,
 				D84789DA22354CF2007C7C7F /* Info.plist */,
@@ -115,6 +126,47 @@
 				D84789E522354CF2007C7C7F /* Info.plist */,
 			);
 			path = AuctionsTests;
+			sourceTree = "<group>";
+		};
+		D860C85622366E9A00A724C9 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				D84789F622354F0F007C7C7F /* AuctionsViewController.swift */,
+				D860C85722366ED600A724C9 /* AuctionTableViewCell.swift */,
+				D860C85222359A1000A724C9 /* AuctionDetailViewController.swift */,
+				D860C86722368EE900A724C9 /* Components */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		D860C85F22368E1900A724C9 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				D860C86222368E3800A724C9 /* Result.swift */,
+				D860C86022368E2400A724C9 /* Networking.swift */,
+				D84789FE223555F7007C7C7F /* Network.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		D860C86422368E5000A724C9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D84789F422354E56007C7C7F /* Auction.swift */,
+				D860C86522368E6300A724C9 /* AuctionResponse.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D860C86722368EE900A724C9 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				D8478A0022355666007C7C7F /* LoadingViewController.swift */,
+				D860C85922367E9900A724C9 /* ErrorViewController.swift */,
+				D860C8542236688900A724C9 /* PlaceholderViewController.swift */,
+				D860C85D2236869400A724C9 /* SplitViewController.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -217,14 +269,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D84789F222354D89007C7C7F /* Dependancies.swift in Sources */,
-				D84789D122354CF0007C7C7F /* ViewController.swift in Sources */,
+				D860C85C2236850400A724C9 /* AuctionsCoordinator.swift in Sources */,
+				D84789F222354D89007C7C7F /* Dependencies.swift in Sources */,
+				D860C86622368E6300A724C9 /* AuctionResponse.swift in Sources */,
+				D860C8552236688900A724C9 /* PlaceholderViewController.swift in Sources */,
 				D84789FF223555F7007C7C7F /* Network.swift in Sources */,
+				D860C86122368E2400A724C9 /* Networking.swift in Sources */,
+				D860C85E2236869400A724C9 /* SplitViewController.swift in Sources */,
+				D860C86322368E3800A724C9 /* Result.swift in Sources */,
 				D84789CF22354CF0007C7C7F /* AppDelegate.swift in Sources */,
 				D84789F522354E56007C7C7F /* Auction.swift in Sources */,
 				D860C85322359A1000A724C9 /* AuctionDetailViewController.swift in Sources */,
+				D860C85822366ED600A724C9 /* AuctionTableViewCell.swift in Sources */,
+				D860C85A22367E9A00A724C9 /* ErrorViewController.swift in Sources */,
 				D8478A0122355666007C7C7F /* LoadingViewController.swift in Sources */,
-				D84789F9223555BF007C7C7F /* AuctionDataSource.swift in Sources */,
 				D84789F722354F0F007C7C7F /* AuctionsViewController.swift in Sources */,
 				D84789EF22354D0D007C7C7F /* AppCoordinator.swift in Sources */,
 			);

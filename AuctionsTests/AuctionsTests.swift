@@ -19,16 +19,19 @@ class AuctionsTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testNormalEstimatedReturnAmount() {
+
+        let aPlusAuction = Auction(id: 0, title: "Test", rate: 0.05, cents: 47000000, term: 0, riskBand: "A+", close: Date())
+        XCTAssertEqual(aPlusAuction.estimatedReturnAmount(bid: 10), 10.3)
+
+        let bAuction = Auction(id: 1, title: "Test", rate: 0.06, cents: 5000000, term: 0, riskBand: "B", close: Date())
+        XCTAssertEqual(bAuction.estimatedReturnAmount(bid: 15), 15.3)
     }
 
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    func testEstimatedReturnAmountWithMissingRiskBand() {
+
+        let auction = Auction(id: 0, title: "Test", rate: 0.05, cents: 47000000, term: 0, riskBand: "", close: Date())
+        XCTAssertEqual(auction.estimatedReturnAmount(), -1.0)
     }
 
 }

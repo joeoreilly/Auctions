@@ -32,18 +32,17 @@ class LoadingViewController: UIViewController {
         indicator.hidesWhenStopped = true
         indicator.translatesAutoresizingMaskIntoConstraints = false
 
-        message.textColor = .darkGray
+        message.textColor = .lightGray
         message.translatesAutoresizingMaskIntoConstraints = false
 
         view.addSubview(indicator)
         view.addSubview(message)
 
         view.addConstraints([
-            indicator.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            indicator.centerYAnchor.constraint(equalTo: view.centerYAnchor),
-
             message.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            message.topAnchor.constraint(equalToSystemSpacingBelow: indicator.bottomAnchor, multiplier: 2)
+            message.centerYAnchor.constraint(equalTo: view.centerYAnchor),
+            indicator.topAnchor.constraint(equalToSystemSpacingBelow: message.bottomAnchor, multiplier: 2),
+            indicator.centerXAnchor.constraint(equalTo: view.centerXAnchor)
             ])
     }
 
